@@ -1,0 +1,5 @@
+D:\BF\Documents\Visual Studio 2013\Projects\MiniTool\MiniTool\bin\Release\MiniTool.dll
+D:\BF\Documents\Visual Studio 2013\Projects\MiniTool\MiniTool\bin\Release\MiniTool.pdb
+D:\BF\Documents\Visual Studio 2013\Projects\MiniTool\MiniTool\obj\Release\MiniTool.dll
+D:\BF\Documents\Visual Studio 2013\Projects\MiniTool\MiniTool\obj\Release\MiniTool.pdb
+D:\BF\Documents\Visual Studio 2013\Projects\MiniTool\MiniTool\obj\Release\MiniTool.csprojResolveAssemblyReference.cache

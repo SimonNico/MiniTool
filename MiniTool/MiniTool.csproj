@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5123F7A8-9929-4B05-88C3-FBB5FC417E23}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiniTool</RootNamespace>
+    <AssemblyName>MiniTool</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\AfterMethodAttribute.cs" />
+    <Compile Include="Attributes\AopAttribute.cs" />
+    <Compile Include="Attributes\AroundMethodAttribute.cs" />
+    <Compile Include="Attributes\BeforeMethodAttribute.cs" />
+    <Compile Include="Attributes\ExceptionCatchAttribute.cs" />
+    <Compile Include="Attributes\MathodAopAdviceAttribute.cs" />
+    <Compile Include="Attributes\TransactionalAttribute.cs" />
+    <Compile Include="FrameWork\AOP\AdviceType.cs" />
+    <Compile Include="FrameWork\AOP\AOPProxy.cs" />
+    <Compile Include="FrameWork\AOP\AspectMethodReturnType.cs" />
+    <Compile Include="FrameWork\AOP\IAdivce.cs" />
+    <Compile Include="FrameWork\AOP\InvokeMethodInfo.cs" />
+    <Compile Include="Attributes\AutoWiredAttribute.cs" />
+    <Compile Include="Util\DataTableBuilder.cs" />
+    <Compile Include="Util\DataTableUtil.cs" />
+    <Compile Include="Attributes\ComponentAttribute.cs" />
+    <Compile Include="Attributes\InjectInterfaceAttribute.cs" />
+    <Compile Include="Attributes\ScopeAttribute.cs" />
+    <Compile Include="FrameWork\IOC\Bean\BeanDefinition.cs" />
+    <Compile Include="FrameWork\IOC\Bean\BeanDefinitionUtils.cs" />
+    <Compile Include="FrameWork\IOC\Bean\BeanNameGenerator.cs" />
+    <Compile Include="FrameWork\IOC\Bean\BeanScopeConfig.cs" />
+    <Compile Include="FrameWork\IOC\Context\AbstractApplicationContext.cs" />
+    <Compile Include="FrameWork\IOC\Context\AttributeApplicationContext.cs" />
+    <Compile Include="FrameWork\IOC\Context\GenericApplicationContext.cs" />
+    <Compile Include="FrameWork\IOC\Context\IApplicationContext.cs" />
+    <Compile Include="FrameWork\IOC\Context\Scanner\BeanDefinitionScanner.cs" />
+    <Compile Include="FrameWork\IOC\Context\Scanner\CandidateComponentProvider.cs" />
+    <Compile Include="FrameWork\IOC\DefaultContext\DefaultListableBeanFactory.cs" />
+    <Compile Include="FrameWork\IOC\Registry\IRegistryBeanDefinition.cs" />
+    <Compile Include="FrameWork\IOC\ScopType.cs" />
+    <Compile Include="Log\LogInfo.cs" />
+    <Compile Include="Log\LogLevel.cs" />
+    <Compile Include="Log\LogHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\CacheManager.cs" />
+    <Compile Include="Util\LinqExtension.cs" />
+    <Compile Include="Util\ReflectionUtil.cs" />
+    <Compile Include="Util\SingleInstanceFactory.cs" />
+    <Compile Include="Attributes\StringLengthAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
