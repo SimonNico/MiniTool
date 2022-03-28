@@ -83,7 +83,7 @@ public static class BLLServiceFactory
  string msg = someService.getInfo();
  ```
  
- ### Part of sigleten
+ ### Part of sigleton
  
  #### we can creat a singleton object with:
  
