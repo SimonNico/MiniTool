@@ -4,7 +4,7 @@
 
 this part is implement some function of spring,it just for learning
 
-#### Declear interface which will be scaned by our program:
+#### Declear interface which will be scanned by our program:
 
 ```C#
    public interface IBaseService
@@ -77,7 +77,7 @@ public static class BLLServiceFactory
         }
  ```
  
- #### we can get obeject with :
+ #### we can get obeject
  ```C#
  SomeService someService = BLLServiceFactory.getService<SomeService>();
  string msg = someService.getInfo();
@@ -85,7 +85,7 @@ public static class BLLServiceFactory
  
  ### Part of sigleton
  
- #### we can creat a singleton object with:
+ #### we can create a singleton object with follow code:
  
  ```C#
  public class someObject: SingleInstanceFactory<someObject>
